@@ -45,7 +45,8 @@ symbol_list = [
     "CVC", 
     "GNT",
     "SOC",
-    "IOST"]
+    "IOST",
+    "EOS"]
 
 
 @bot.register([Group, TEXT])
