@@ -9,6 +9,16 @@ bot = Bot(console_qr=True)
 redis_server = get_redis()
 huobi_api = HuobiAPI()
 
+url = "https://support.binance.com/hc/zh-cn/categories/115000056351-%E5%85%AC%E5%91%8A%E4%B8%AD%E5%BF%83"
+try:
+    response = requests.request(
+        "GET", url, headers=headers, timeout=30)
+    print(response.status_code)
+    print(response.text)
+except Exception as ex:
+    print(ex)
+
+
 symbol_list = [
     "BTC",
     "BCH",
